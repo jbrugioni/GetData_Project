@@ -41,9 +41,9 @@ activity_labels<-read.table(activity_labels_filename);
 
 
 # Merge the training and the test sets to create one data set.
-x_all<-rbind(x_test,x_train);
-y_all<-rbind(y_test,y_train);
-subj_all<-rbind(subj_test,subj_train);
+x_all<-rbind(x_train,x_test);
+y_all<-rbind(y_train,y_test);
+subj_all<-rbind(subj_train,subj_test);
 
 
 # save off the compelted merged datasets
